@@ -24,10 +24,3 @@ jobs:
 
       - name: Build the project
         run: yarn build
-
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONAL_JARED_WILLIAMS }}
-          projectId: personal-jared-williams
