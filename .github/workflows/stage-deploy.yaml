@@ -16,11 +16,9 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Set environment variables
+      - name: Build the project
         env:
           VITE_TARGET: staging
-
-      - name: Build the project
         run: yarn build
 
       - name: Deploy to Firebase Hosting
