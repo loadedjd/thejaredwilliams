@@ -21,5 +21,10 @@ jobs:
           VITE_TARGET: staging
         run: yarn build
 
-      - name: Deploy to Firebase Hosting
-        run: npx firebase-tools deploy --only hosting:staging --project personal-jared-williams
+      - name: Deploy to Firebase Hosting (Stage)
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONAL_JARED_WILLIAMS }}
+          projectId: personal-jared-williams
+          target: staging
