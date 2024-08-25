@@ -1,7 +1,7 @@
-import reactLogo from "./assets/react.svg";
+import reactLogo from "../..//assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import packageJson from "../package.json";
+import packageJson from "../../../package.json";
 
 function App() {
   const version = packageJson.version;
