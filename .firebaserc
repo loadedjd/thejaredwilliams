@@ -1,5 +1,16 @@
 {
   "projects": {
     "default": "personal-jared-williams"
-  }
+  },
+  "targets": {
+    "personal-jared-williams": {
+      "hosting": {
+        "staging": [
+          "personal-jared-williams-stage"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
