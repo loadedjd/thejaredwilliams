@@ -22,10 +22,7 @@ jobs:
         run: yarn build
 
       - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
+        run: npx firebase-tools deploy --only hosting:staging --project personal-jared-williams
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONAL_JARED_WILLIAMS }}
-          projectId: personal-jared-williams
-          target: staging
-          channelId: staging
