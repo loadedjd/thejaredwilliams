@@ -20,7 +20,7 @@ function App() {
     <>
       <h1>Jared</h1>
       <div className="card">
-        Versions {version} | Target {target}
+        Version {version} | Target {target}
       </div>
     </>
   );
