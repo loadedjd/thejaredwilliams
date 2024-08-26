@@ -1,7 +1,7 @@
 import "./App.css";
 import packageJson from "../package.json";
 import confetti from "canvas-confetti";
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 
 function App() {
   const version = packageJson.version;
